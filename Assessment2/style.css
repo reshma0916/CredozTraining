@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+    --primary-color: #a855f7;
+    --primary-color-dark: #9333ea;
+    --secondary-color: #0689b0;
+    --text-dark: #1f2937;
+    --text-light: #03050a;
+    --extra-light: #faf5ff;
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #faf5ff;
+    z-index: 99;
+}
+
+.nav__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-left: 20px;
+  color: var(--text-dark);
+  font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+  color: var(--secondary-color);
+}
+
+.content {
+  max-width: 50%;
+  font-size: 1.2rem; 
+}
+
+h1 {
+  font-size: 2.5rem; 
+}
+
+#email {
+  font-size: 1.2rem; 
+}
+.bx-envelope {
+  color: #888; 
+  font-size: 1.2rem;
+}
+
+button[type="submit"] {
+  background-color: rgb(102, 8, 226); 
+  color: white; 
+}
+
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    color: var(--text-dark);
+}
+
+ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.section__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.img {
+    max-width: 40%;
+}
+
+.img img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px; 
+    border-radius: 10px;
+}
+
+.badges {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.badge {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.badge span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+@media (max-width: 750px) {
+    .nav__content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    ul {
+        margin-top: 20px;
+    }
+
+    .section__container {
+        flex-direction: column;
+    }
+
+    .content, .img {
+        max-width: 100%;
+    }
+
+    .badge {
+        text-align: center;
+    }
+}
